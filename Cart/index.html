@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amrutanjan</title>
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../Icomoon icons/style.css">
+</head>
+
+<body>
+
+  <header class="container-fluid p-0">
+    <section class="header-container">
+      <nav class="navbar navbar-expand-lg navbar-style navbar-light fixed-top w-100">
+        <a class="navbar-brand logo-wrapper" href="#">
+          <img class="logo-bg-style" src="../Resources/Logo-light-bg.png" alt="Logo">
+          <img class="logo-style" src="../Resources/Logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto navbar-ul-list">
+            <li class="nav-item ">
+              <a class="nav-link each-nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item w-100">
+              <a class="nav-link each-nav-link mr-auto" href="../Cart/index.html">Our Products</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link each-nav-link" href="#">Sign In</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link each-nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-expanded="false">
+                ENG
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link each-nav-link search-icon" href="#">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link each-nav-link" href="#">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link each-nav-link like-icon" href="#">Whishlist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link each-nav-link shop-now-btn" href="#">SHOP NOW</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+  </header>
+
+    <main>
+        <section class="container cart-cont d-flex flex-column flex-md-row">
+            <div class="filter-cont p-2">
+                <p>Filter</p>
+                <hr class="hr-line">
+                <h5>Product Category</h5>
+                <div>
+                  <input id="f-pain-management" type="checkbox">
+                  <label for="f-pain-management">Pain Management</label>
+                </div>
+                <div>
+                  <input id="f-congestion-management" type="checkbox">
+                  <label for="f-congestion-management">Congestion Management</label>
+                </div>
+                <div>
+                  <input id="f-womens-Hygiene" type="checkbox">
+                  <label for="f-womens-Hygiene">Women’s Hygiene</label>
+                </div>
+                <div>
+                  <input id="f-beverages" type="checkbox">
+                  <label for="f-beverages">Beverages</label>
+                </div>
+                <div>
+                  <input id="f-personal-care" type="checkbox">
+                  <label for="f-personal-care">Personal Care</label>
+                </div>
+                <hr class="hr-line">
+                <h5>Price</h5>
+                <div>
+                  <input id="f-30-100" type="checkbox">
+                  <label for="f-30-100">Rs.30 - Rs.100  (40)</label>
+                </div>
+                <div>
+                  <input id="f-101-200" type="checkbox">
+                  <label for="f-101-200">Rs.101 - Rs.200  (40)</label>
+                </div>
+                <div>
+                  <input id="f-201-300" type="checkbox">
+                  <label for="f-201-300">Rs.201 - Rs.300  (20)</label>
+                </div>
+                <div>
+                  <input id="f-300-above" type="checkbox">
+                  <label for="f-300-above">Rs.300 and Above  (10)</label>
+                </div>
+            </div>
+            <div class="producta-cont">
+              <div class="d-flex flex-column flex-sm-row justify-content-start justify-content-sm-between align-items-start p-2 ">
+                <h4 class="m-0">PAIN MANAGEMENT</h4>
+                <div class="d-flex ">
+                  <span class="dots-icon p-2">icon</span>
+                  <span class="menu-icon p-2">icon</span>
+                  <select class="sort" name="sort" id="products-sort">
+                    <option >Select</option>
+                    <option value="Low to High">Low to High</option>
+                    <option value="High to Low">High to Low</option>
+                  </select>
+                </div>
+              </div>
+              <hr class="hr-line m-0">
+              <div>
+                <ul class="cart-products-cont d-flex justify-content-center justify-content-sm-start align-items-center flex-wrap">
+                  <li class="each-cart-product p-3 d-flex flex-column justify-content-start align-items-start">
+                    <img class="align-self-center each-cart-image each-cart-amrutanjan-image" src="../Cart Resources/cart-yellow-balm.png" alt="yellow balm">
+                    <p class="product-description">Aromatic Action Pain Balm Extra Power</p>
+                    <div class="w-100">
+                      <!-- Write with radio btns -->
+                      <button class="btn radio-btns radio-active-btn">8 ml</button>
+                      <button class="btn radio-btns">27.5 ml</button>
+                      <button class="btn radio-btns">50 ml</button>
+                    </div>
+                    <p class="m-1">RS. 38</p>
+                    <div class="rating-cont">
+                      <span class="star-icon-1"></span>
+                      <span class="star-icon-2"></span>
+                      <span class="star-icon-3"></span>
+                      <span class="star-icon-4"></span>
+                      <span class="star-icon-5"></span>
+                      <span class="rating">4.5</span>
+                    </div>
+                  </li>
+                  <li class="each-cart-product p-3 d-flex flex-column justify-content-start align-items-start">
+                    <img class="align-self-center each-cart-image" src="../Cart Resources/cart-green-balm.png" alt="yellow balm">
+                    <p class="product-description">Aromatic Action Pain Balm Extra Power</p>
+                    <div>
+                      <!-- Write with radio btns -->
+                      <button class="btn radio-btns radio-active-btn">8 ml</button>
+                      <button class="btn radio-btns">8 ml</button>
+                      <button class="btn radio-btns">8 ml</button>
+                    </div>
+                    <p class="m-1">RS. 38</p>
+                    <div class="rating-cont">
+                      <span class="star-icon-1"></span>
+                      <span class="star-icon-2"></span>
+                      <span class="star-icon-3"></span>
+                      <span class="star-icon-4"></span>
+                      <span class="star-icon-5"></span>
+                      <span class="rating">4.5</span>
+                    </div>
+                  </li>
+                  <li class="each-cart-product p-3 d-flex flex-column justify-content-start align-items-start">
+                    <img class="align-self-center" src="../Cart Resources/cart-red-balm.png" alt="yellow balm">
+                    <p class="product-description">Aromatic Action Pain Balm Extra Power</p>
+                    <div>
+                      <!-- Write with radio btns -->
+                      <button class="btn radio-btns radio-active-btn">8 ml</button>
+                    </div>
+                    <p class="m-1">RS. 42</p>
+                    <div class="rating-cont">
+                      <span class="star-icon-1"></span>
+                      <span class="star-icon-2"></span>
+                      <span class="star-icon-3"></span>
+                      <span class="star-icon-4"></span>
+                      <span class="star-icon-5"></span>
+                      <span class="rating">4.5</span>
+                    </div>
+                  </li>
+                  <li class="each-cart-product p-3 d-flex flex-column justify-content-start align-items-start">
+                    <img class="align-self-center" src="../Cart Resources/cart-headache-roll-on.png" alt="yellow balm">
+                    <p class="product-description">Aromatic Action Pain Balm Extra Power</p>
+                    <div>
+                      <!-- Write with radio btns -->
+                      <button class="btn radio-btns radio-active-btn">8 ml</button>
+                      <button class="btn radio-btns">10 ml</button>
+                    </div>
+                    <p class="m-1">RS. 35</p>
+                    <div class="rating-cont">
+                      <span class="star-icon-1"></span>
+                      <span class="star-icon-2"></span>
+                      <span class="star-icon-3"></span>
+                      <span class="star-icon-4"></span>
+                      <span class="star-icon-5"></span>
+                      <span class="rating">4.5</span>
+                    </div>
+                  </li>
+                  <li class="each-cart-product p-3 d-flex flex-column justify-content-start align-items-start">
+                    <img class="align-self-center" src="../Cart Resources/cart-back-pain-roll-on.png" alt="yellow balm">
+                    <p class="product-description">Aromatic Action Pain Balm Extra Power</p>
+                    <div>
+                      <!-- Write with radio btns -->
+                      <button class="btn radio-btns radio-active-btn">50 ml</button>
+                    </div>
+                    <p class="m-1">RS. 100</p>
+                    <div class="rating-cont">
+                      <span class="star-icon-1"></span>
+                      <span class="star-icon-2"></span>
+                      <span class="star-icon-3"></span>
+                      <span class="star-icon-4"></span>
+                      <span class="star-icon-5"></span>
+                      <span class="rating">4.5</span>
+                    </div>
+                  </li>
+                  <li class="each-cart-product p-3 d-flex flex-column justify-content-start align-items-start">
+                    <img class="align-self-center" src="../Cart Resources/cart-back-pain-lotion.png" alt="yellow balm">
+                    <p class="product-description">Aromatic Action Pain Balm Extra Power</p>
+                    <div>
+                      <!-- Write with radio btns -->
+                      <button class="btn radio-btns radio-active-btn">30 ml</button>
+                    </div>
+                    <p class="m-1">RS. 70</p>
+                    <div class="rating-cont">
+                      <span class="star-icon-1"></span>
+                      <span class="star-icon-2"></span>
+                      <span class="star-icon-3"></span>
+                      <span class="star-icon-4"></span>
+                      <span class="star-icon-5"></span>
+                      <span class="rating">4.5</span>
+                    </div>
+                  </li>
+                  <li class="each-cart-product p-3 d-flex flex-column justify-content-start align-items-start">
+                    <img class="align-self-center " src="../Cart Resources/cart-joint-muscle.png" alt="yellow balm">
+                    <p class="product-description">Aromatic Action Pain Balm Extra Power</p>
+                    <div>
+                      <!-- Write with radio btns -->
+                      <button class="btn radio-btns radio-active-btn">8 ml</button>
+                      <button class="btn radio-btns">8 ml</button>
+                      <button class="btn radio-btns">8 ml</button>
+                    </div>
+                    <p class="m-1">RS. 100</p>
+                    <div class="rating-cont">
+                      <span class="star-icon-1"></span>
+                      <span class="star-icon-2"></span>
+                      <span class="star-icon-3"></span>
+                      <span class="star-icon-4"></span>
+                      <span class="star-icon-5"></span>
+                      <span class="rating">4.5</span>
+                    </div>
+                  </li>
+                  <li class="each-cart-product p-3 d-flex flex-column justify-content-start align-items-start">
+                    <img class="align-self-center" src="../Cart Resources/cart-pian-relief.png" alt="yellow balm">
+                    <p class="product-description">Aromatic Action Pain Balm Extra Power</p>
+                    <div>
+                      <!-- Write with radio btns -->
+                      <button class="btn radio-btns radio-active-btn">8 ml</button>
+                      <button class="btn radio-btns">8 ml</button>
+                      <button class="btn radio-btns">8 ml</button>
+                    </div>
+                    <p class="m-1">RS. 350</p>
+                    <div class="rating-cont">
+                      <span class="star-icon-1"></span>
+                      <span class="star-icon-2"></span>
+                      <span class="star-icon-3"></span>
+                      <span class="star-icon-4"></span>
+                      <span class="star-icon-5"></span>
+                      <span class="rating">4.5</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          
+        </section>
+    </main>
+
+    <footer>
+      <section>
+        <div class="container-fluid footer">
+          <div class="row d-flex justify-content-start align-items-start">
+            <div
+              class="each-footer-cont col-12 col-sm-6 col-lg-3 d-flex flex-column justify-content-center align-items-start">
+              <h5 class="footer-header">Quick Links</h5>
+              <a class="footer-anchor" href="#0">Bulk Buys</a>
+              <a class="footer-anchor" href="#0">Investor Relationss</a>
+              <a class="footer-anchor" href="#0">Careers</a>
+              <a class="footer-anchor" href="#0">Contact Us</a>
+            </div>
+            <div
+              class="each-footer-cont col-12 col-sm-6 col-lg-3 d-flex flex-column justify-content-center align-items-start">
+              <h5 class="footer-header">Customer Care</h5>
+              <a class="footer-anchor" href="#0">Order History</a>
+              <a class="footer-anchor" href="#0">Shipping</a>
+              <a class="footer-anchor" href="#0">Returns</a>
+              <a class="footer-anchor" href="#0">Terms of Use</a>
+              <a class="footer-anchor" href="#0">Returns</a>
+              <a class="footer-anchor" href="#0">Privacy Policy</a>
+              <a class="footer-anchor" href="#0">Cancellation Policy</a>
+            </div>
+            <div
+              class="each-footer-cont col-12 col-sm-6 col-lg-3 d-flex flex-column justify-content-center align-items-start">
+              <h5 class="footer-header">Quick Links</h5>
+              <div class="footer-anchor address-icon d-flex justify-content-start align-items-start">
+                <p>103, (Old No. 42-45), Luz Church Road. Mylapore, Chennai- 600 004.</p>
+              </div>
+              <a class="footer-anchor phone-icon" href="#0">+91 44 2499 4465 (5 Lines)</a>
+              <a class="footer-anchor mobile-icon" href="#0">Toll Free | 1-800-425-4545</a>
+              <a class="footer-anchor fax-icon" href="#0">Fax | +91 44 2499 4585</a>
+              <a class="footer-anchor mail-icon" href="#0">customercare@amrutanjan.com</a>
+              <a class="footer-anchor user-icon" href="#0">investors@amrutanjan.com</a>
+              <a class="footer-anchor pt-3" href="#0">Web Safelty Links</a>
+              <a class="footer-anchor pt-3" href="#0">Sitemap / Links</a>
+            </div>
+            <div
+              class=" each-footer-cont col-12 col-sm-6 col-lg-3 d-flex flex-column justify-content-center align-items-start">
+              <h5 class="footer-header">Sign Up to Newsletter</h5>
+              <p class="footer-subscribe-text">Subscribe to our newsletter and get info on best deals</p>
+              <form action="#0" class="d-flex flex-column justify-content-end align-items-end mt-3 w-100">
+                <input class="form-input-field p-2" type="email" placeholder="Enter Email ID">
+                <button class="align-self-end subscribe-btn" type="submit">Subscribe</button>
+              </form>
+              <div class="footer-icons d-flex justify-content-end align-items-end mt-5">
+                <a href="#0" class="footer-icon facebook-icon"></a>
+                <a href="#0" class="footer-icon youtube-icon"></a>
+                <a href="#0" class="footer-icon twitter-icon"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="copy-right-text text-center pt-4">&copy; Copyright 2020 - Amrutanjan Health Care Ltd. All rights reserved. Please read our privacy policy.</p>
+      </section>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.usebootstrap.com/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
